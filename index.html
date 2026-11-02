@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="BN International School, Areraj (East Champaran, Bihar) — English-medium school from Nursery to Class 7. Admissions open for session 2027–28.">
+<meta name="theme-color" content="#15225A">
+<meta property="og:title" content="BN International School, Areraj — Admissions Open 2027–28">
+<meta property="og:description" content="English-medium school from Nursery to Class 7 in Areraj, East Champaran. Book a school visit today.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<title>BN International School</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Hind:wght@400;500;600&family=Kalam:wght@400;700&display=swap">
+<style>
+/* Layout: school-notebook pages — ruled-paper bands, a classroom "ladder" from Nursery to Class 7, marigold as the one loud colour */
+:root{
+  --ink:#15225A;--ink-2:#2B3A7A;--ink-deep:#0C1440;
+  --paper:#FBFBF8;--paper-2:#EEF1FA;--rule:#C9D3EE;--margin:#E4572E;
+  --marigold:#F4A300;--marigold-2:#FFD36B;--leaf:#2F8F5B;
+  --fg:#18203F;--muted:#59627F;--card:#FFFFFF;--on-ink:#FFFFFF;--on-ink-2:#C9D3EE;
+  --shadow:0 18px 40px -18px rgba(21,34,90,.35);
+  --f-display:"Baloo 2","Trebuchet MS",system-ui,sans-serif;
+  --f-body:"Hind","Segoe UI",system-ui,sans-serif;
+  --f-hand:"Kalam","Comic Sans MS",cursive;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --ink:#0E1640;--ink-2:#3A4C9A;--ink-deep:#080D2A;--paper:#0F1428;--paper-2:#151C37;--rule:#28325E;--margin:#F07A55;
+  --marigold:#FFB627;--marigold-2:#FFD877;--leaf:#4CC285;--fg:#E8ECFA;--muted:#A3ACCB;--card:#18203F;--on-ink-2:#B7C1E4;
+  --shadow:0 18px 40px -18px rgba(0,0,0,.7);color-scheme:dark}}
+:root[data-theme="dark"]{
+  --ink:#0E1640;--ink-2:#3A4C9A;--ink-deep:#080D2A;--paper:#0F1428;--paper-2:#151C37;--rule:#28325E;--margin:#F07A55;
+  --marigold:#FFB627;--marigold-2:#FFD877;--leaf:#4CC285;--fg:#E8ECFA;--muted:#A3ACCB;--card:#18203F;--on-ink-2:#B7C1E4;
+  --shadow:0 18px 40px -18px rgba(0,0,0,.7);color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--fg);font-family:var(--f-body);font-size:17px;line-height:1.6;overflow-x:hidden}
+h1,h2,h3{font-family:var(--f-display);line-height:1.08;text-wrap:balance;margin:0}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--marigold);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1140px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-display);font-weight:700;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--margin)}
+.eyebrow::before{content:"";width:22px;height:2px;background:currentColor;border-radius:2px}
+
+/* ---------- nav ---------- */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--ink-deep)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--ink-deep) 92%,transparent);backdrop-filter:blur(10px);color:var(--on-ink);transition:box-shadow .3s}
+nav.scrolled{box-shadow:0 10px 30px -12px rgba(0,0,0,.5)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
+.progress{position:absolute;left:0;bottom:0;height:3px;width:100%;background:linear-gradient(90deg,var(--marigold),var(--marigold-2));transform-origin:0 50%;transform:scaleX(0)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand .crest{width:44px;height:50px;flex:none;filter:drop-shadow(0 4px 8px rgba(0,0,0,.35));transition:transform .4s cubic-bezier(.3,1.6,.5,1)}
+.brand:hover .crest{transform:rotate(-8deg) scale(1.08)}
+.brand b{font-family:var(--f-display);font-size:1.18rem;line-height:1;display:block;letter-spacing:.01em}
+.brand small{font-size:.7rem;color:var(--marigold);letter-spacing:.18em;font-weight:600}
+.navlinks{display:flex;gap:24px;align-items:center;font-weight:500}
+.navlinks a:not(.btn){text-decoration:none;opacity:.85;position:relative}
+.navlinks a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;background:var(--marigold);transform:scaleX(0);transform-origin:right;transition:transform .3s}
+.navlinks a:not(.btn):hover{opacity:1}
+.navlinks a:not(.btn):hover::after{transform:scaleX(1);transform-origin:left}
+@media (max-width:820px){.navlinks a:not(.btn){display:none}.navlinks .btn{padding:9px 14px;font-size:.92rem}}
+
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:8px;font-family:var(--f-display);font-weight:700;font-size:1rem;padding:12px 22px;border-radius:999px;border:0;cursor:pointer;text-decoration:none;transition:transform .25s cubic-bezier(.3,1.6,.5,1),box-shadow .25s}
+.btn:hover{transform:translateY(-3px)}
+.btn svg{width:18px;height:18px;transition:transform .25s}
+.btn:hover svg{transform:translateX(4px)}
+.btn-gold{background:linear-gradient(180deg,var(--marigold-2),var(--marigold));color:#1A1400;box-shadow:0 8px 20px -8px rgba(244,163,0,.8)}
+.btn-gold::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.65) 50%,transparent 70%);transform:translateX(-120%);animation:shine 3.6s ease-in-out infinite}
+@keyframes shine{0%,55%{transform:translateX(-120%)}85%,100%{transform:translateX(120%)}}
+.btn-ghost{background:rgba(255,255,255,.04);color:var(--on-ink);box-shadow:inset 0 0 0 2px rgba(255,255,255,.35)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 2px var(--marigold)}
+
+/* ---------- hero ---------- */
+.hero{background:radial-gradient(1200px 600px at 85% 10%,#24358A 0%,transparent 60%),radial-gradient(800px 500px at 0% 100%,#1B2A6E 0%,transparent 60%),var(--ink);color:var(--on-ink);position:relative;overflow:hidden;isolation:isolate}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding-block:56px 64px}
+.doodles{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.doodles span{position:absolute;font-family:var(--f-hand);font-weight:700;color:rgba(255,255,255,.09);animation:drift 9s ease-in-out infinite}
+@keyframes drift{50%{transform:translateY(-16px) rotate(8deg)}}
+.ticket{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.08);border:1.5px dashed rgba(255,255,255,.35);padding:6px 14px 6px 10px;border-radius:999px;font-weight:600;font-size:.92rem}
+.ticket i{width:10px;height:10px;border-radius:50%;background:var(--marigold);animation:ping 1.8s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(244,163,0,.8)}70%{box-shadow:0 0 0 12px rgba(244,163,0,0)}100%{box-shadow:0 0 0 0 rgba(244,163,0,0)}}
+.hero h1{font-size:clamp(2.6rem,6.6vw,4.8rem);font-weight:800;margin-top:18px;letter-spacing:-.015em}
+.hero h1 .w{display:inline-block;animation:wordUp .8s cubic-bezier(.2,.9,.3,1.2) both}
+@keyframes wordUp{from{transform:translateY(.5em) rotate(4deg)}}
+.hero h1 em{font-style:normal;color:var(--marigold);position:relative;white-space:nowrap;display:inline-block}
+.hero h1 em svg{position:absolute;left:-2%;bottom:-.2em;width:104%;height:.36em;overflow:visible}
+.hero h1 em path{stroke-dasharray:220;stroke-dashoffset:0;animation:draw 1.2s .9s ease-out both}
+@keyframes draw{from{stroke-dashoffset:220}}
+.hero .lede{margin-top:20px;font-size:1.14rem;max-width:36ch;color:var(--on-ink-2)}
+.hero .lede-hi{margin-top:8px;font-family:var(--f-hand);font-size:1.25rem;color:var(--marigold-2)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+.facts span{display:flex;align-items:center;gap:8px;font-size:.92rem;padding:7px 14px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)}
+.facts svg{width:18px;height:18px;flex:none;stroke:var(--marigold)}
+.fade{animation:fadeUp .9s cubic-bezier(.2,.8,.3,1) both}
+.d1{animation-delay:.15s}.d2{animation-delay:.3s}.d3{animation-delay:.45s}.d4{animation-delay:.6s}
+@keyframes fadeUp{from{transform:translateY(18px)}}
+
+.scene{position:relative;max-width:100%}
+.scene > svg{width:100%;height:auto;display:block;overflow:visible}
+.sun-rays{transform-box:fill-box;transform-origin:center;animation:spin 30s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.cloud{animation:cloud 14s ease-in-out infinite alternate}
+.cloud.c2{animation-duration:18s;animation-direction:alternate-reverse}
+@keyframes cloud{to{transform:translateX(40px)}}
+.bird{animation:fly 16s linear infinite}
+.bird.b2{animation-delay:-6s;animation-duration:19s}
+@keyframes fly{from{transform:translate(-60px,10px)}to{transform:translate(470px,-30px)}}
+.wing{transform-box:fill-box;transform-origin:center;animation:flap .5s ease-in-out infinite alternate}
+@keyframes flap{to{transform:scaleY(-.6)}}
+.flag{transform-origin:0 50%;transform-box:fill-box;animation:wave 2.4s ease-in-out infinite}
+@keyframes wave{50%{transform:skewY(-7deg) scaleX(.93)}}
+.lamp{animation:twinkle 3s ease-in-out infinite}
+.lamp:nth-child(2){animation-delay:1s}.lamp:nth-child(3){animation-delay:2s}
+@keyframes twinkle{50%{opacity:.25}}
+.kid{animation:bounce 1.6s ease-in-out infinite}
+.kid.k2{animation-delay:.4s}
+@keyframes bounce{50%{transform:translateY(-6px)}}
+
+.seal{position:absolute;left:-4%;top:-6%;width:clamp(110px,28%,150px);aspect-ratio:1;max-width:100%}
+.seal .ring{position:absolute;inset:0;animation:spin 22s linear infinite}
+.seal .ring svg{width:100%;height:100%}
+.seal .crest{position:absolute;inset:22% 25%;width:50%;height:auto;filter:drop-shadow(0 8px 14px rgba(0,0,0,.45));animation:floaty 4s ease-in-out infinite}
+@keyframes floaty{50%{transform:translateY(-5px)}}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;padding-block:36px 44px}.scene{max-width:460px;margin:12px auto 0}.seal{left:0;top:-4%}}
+
+/* ticker */
+.ticker{background:var(--marigold);color:#1A1400;overflow:hidden;border-block:3px solid var(--ink-deep);position:relative}
+.ticker .track{display:flex;width:max-content;animation:marquee 32s linear infinite}
+.ticker:hover .track{animation-play-state:paused}
+.ticker span{font-family:var(--f-display);font-weight:700;font-size:1.05rem;padding:10px 0;white-space:nowrap;display:flex;align-items:center}
+.ticker span::after{content:"✦";margin:0 22px;font-size:.8rem;opacity:.7}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* sections */
+section{padding-block:84px}
+.ruled{background:var(--paper-2);background-image:repeating-linear-gradient(to bottom,transparent 0 31px,var(--rule) 31px 32px);position:relative}
+.ruled::before{content:"";position:absolute;top:0;bottom:0;left:max(10px,calc(50% - 610px));width:2px;background:var(--margin);opacity:.55}
+.head{display:grid;gap:12px;max-width:720px;margin-bottom:42px}
+.head h2{font-size:clamp(2rem,4.6vw,3.1rem);color:var(--fg)}
+.head h2 .mk{background:linear-gradient(transparent 62%,color-mix(in srgb,var(--marigold) 55%,transparent) 62%);padding:0 .1em}
+.head p{color:var(--muted);font-size:1.08rem}
+
+/* reveal: content is always visible; only motion is added */
+.js .reveal{transform:translateY(28px);transition:transform .9s cubic-bezier(.2,.8,.3,1)}
+.js .reveal.in{transform:none}
+
+/* class ladder */
+.ladder{display:grid;grid-template-columns:repeat(10,1fr);gap:8px;align-items:end;min-height:290px}
+.step{all:unset;cursor:pointer;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:6px;border-radius:14px 14px 6px 6px;background:var(--card);border:2px solid var(--rule);padding:10px 4px;text-align:center;transition:transform .35s cubic-bezier(.3,1.6,.5,1),background .25s,border-color .25s,box-shadow .25s;min-width:0}
+.js .ladder .step{transform:translateY(60px)}
+.js .ladder.in .step{transform:none;transition-delay:calc(var(--i) * 60ms)}
+.ladder.in .step:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.step b{font-family:var(--f-display);font-size:1.3rem;line-height:1;color:var(--ink-2)}
+.step small{font-size:.72rem;color:var(--muted);line-height:1.2}
+.step[aria-pressed="true"]{background:linear-gradient(180deg,var(--ink-2),var(--ink));border-color:var(--ink);box-shadow:0 14px 30px -12px rgba(21,34,90,.6)}
+.step[aria-pressed="true"] b{color:var(--marigold)}
+.step[aria-pressed="true"] small{color:var(--on-ink-2)}
+.step .cap{position:absolute;top:8px;width:20px;height:20px;opacity:0;transform:translateY(-10px);transition:.3s}
+.step[aria-pressed="true"] .cap{opacity:1;transform:none}
+.stage{display:flex;flex-wrap:wrap;gap:16px;margin-top:16px;font-size:.85rem;font-weight:600;color:var(--muted)}
+.stage span{display:flex;align-items:center;gap:6px}
+.stage i{width:12px;height:12px;border-radius:3px}
+.detail{margin-top:26px;display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:start;background:var(--card);border:2px solid var(--ink);border-radius:20px;padding:26px;box-shadow:7px 7px 0 var(--marigold)}
+.detail.pop{animation:pop .45s cubic-bezier(.3,1.5,.5,1)}
+@keyframes pop{from{transform:scale(.96) rotate(-.6deg)}}
+.detail .big{font-family:var(--f-display);font-weight:800;font-size:3.8rem;line-height:.9;min-width:2.4ch;background:linear-gradient(180deg,var(--ink-2),var(--margin));-webkit-background-clip:text;background-clip:text;color:transparent}
+.detail h3{font-size:1.55rem}
+.detail .age{color:var(--margin);font-weight:600;margin-top:2px}
+.detail ul{margin:12px 0 0;padding:0;list-style:none;display:grid;gap:6px}
+.detail li{display:flex;gap:10px;align-items:flex-start}
+.detail li::before{content:"";flex:none;width:18px;height:18px;margin-top:4px;border-radius:50%;background:var(--leaf) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5'%3E%3Cpath d='m6 12 4 4 8-8'/%3E%3C/svg%3E") center/12px no-repeat}
+.detail li{animation:fadeUp .5s both}
+.detail li:nth-child(2){animation-delay:.08s}.detail li:nth-child(3){animation-delay:.16s}
+@media (max-width:640px){.ladder{grid-template-columns:repeat(5,1fr);min-height:0}.step{height:auto!important;padding:14px 4px}.detail{grid-template-columns:1fr;gap:8px;padding:20px}.detail .big{font-size:2.8rem}}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.why article{position:relative;background:var(--card);border-radius:18px;padding:26px;border:1.5px solid var(--rule);display:grid;gap:10px;align-content:start;transition:transform .35s cubic-bezier(.3,1.4,.5,1),box-shadow .35s,border-color .35s}
+.why article:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--marigold)}
+.why .ic{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,var(--paper-2),color-mix(in srgb,var(--marigold) 22%,var(--paper-2)));transition:transform .4s cubic-bezier(.3,1.6,.5,1)}
+.why article:hover .ic{transform:rotate(-8deg) scale(1.1)}
+.why .ic svg{width:30px;height:30px}
+.why h3{font-size:1.32rem}
+.why p{color:var(--muted)}
+.why article.feature{grid-column:span 2;background:linear-gradient(135deg,var(--ink-2),var(--ink) 60%);color:var(--on-ink);border-color:transparent;overflow:hidden}
+.why article.feature::after{content:"";position:absolute;width:260px;height:260px;right:-80px;top:-90px;border-radius:50%;background:radial-gradient(circle,rgba(244,163,0,.35),transparent 70%);animation:floaty 6s ease-in-out infinite}
+.why article.feature p{color:var(--on-ink-2);max-width:52ch}
+.why article.feature .ic{background:linear-gradient(135deg,var(--marigold-2),var(--marigold))}
+@media (max-width:860px){.why{grid-template-columns:1fr 1fr}.why article.feature{grid-column:span 2}}
+@media (max-width:560px){.why{grid-template-columns:1fr}.why article.feature{grid-column:auto}}
+
+/* day timetable */
+.day{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.tt{list-style:none;margin:0 0 0 64px;padding:0;position:relative;border-left:3px dotted var(--rule)}
+.tt-fill{position:absolute;left:-3px;top:0;width:3px;height:0;background:linear-gradient(var(--marigold),var(--margin));border-radius:3px}
+.tt li{position:relative;padding:0 0 24px 24px}
+.tt time{position:absolute;left:-82px;top:2px;font-family:var(--f-display);font-weight:700;font-size:.92rem;color:var(--margin);width:56px;text-align:right;font-variant-numeric:tabular-nums}
+.tt li::before{content:"";position:absolute;left:-10.5px;top:6px;width:18px;height:18px;border-radius:50%;background:var(--paper);border:3px solid var(--ink-2);transition:background .3s,border-color .3s,transform .3s cubic-bezier(.3,1.8,.5,1)}
+.tt li.on::before{background:var(--marigold);border-color:var(--marigold);transform:scale(1.15)}
+.tt b{font-family:var(--f-display);font-size:1.14rem;display:block;line-height:1.3}
+.tt span{color:var(--muted);font-size:.96rem}
+.note{font-size:.85rem;color:var(--muted)}
+.quote{position:relative;margin:0;background:linear-gradient(160deg,var(--marigold-2),var(--marigold));color:#1A1400;border-radius:22px;padding:34px 30px 30px;transform:rotate(-1.5deg);box-shadow:0 24px 50px -20px rgba(21,34,90,.45);transition:transform .5s cubic-bezier(.3,1.4,.5,1)}
+.quote:hover{transform:rotate(0) scale(1.02)}
+.quote::before{content:"";position:absolute;top:-14px;left:50%;width:90px;height:28px;transform:translateX(-50%) rotate(2deg);background:rgba(255,255,255,.55);border-radius:3px}
+.quote p{font-family:var(--f-hand);font-size:1.45rem;line-height:1.4}
+.quote small{display:block;margin-top:14px;font-weight:600}
+@media (max-width:860px){.day{grid-template-columns:1fr}}
+
+/* admission steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s;padding:0;margin:0;position:relative}
+.steps li{list-style:none;position:relative;background:var(--card);border-radius:18px;padding:24px;border:1.5px solid var(--rule);display:grid;gap:8px;align-content:start;counter-increment:s;transition:transform .35s cubic-bezier(.3,1.4,.5,1),box-shadow .35s}
+.steps li:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.steps li::before{content:counter(s);font-family:var(--f-display);font-weight:800;font-size:1.35rem;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--ink-2),var(--ink));color:var(--marigold);box-shadow:0 8px 16px -8px rgba(21,34,90,.7)}
+.steps li:not(:last-child)::after{content:"";position:absolute;right:-16px;top:44px;width:14px;height:14px;border-top:3px solid var(--marigold);border-right:3px solid var(--marigold);transform:rotate(45deg);animation:nudge 1.4s ease-in-out infinite}
+@keyframes nudge{50%{transform:translateX(4px) rotate(45deg)}}
+.steps b{font-family:var(--f-display);font-size:1.18rem}
+.steps span{color:var(--muted);font-size:.95rem}
+.docs{margin-top:26px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.docs strong{margin-right:6px}
+.chip{background:var(--card);border:1.5px dashed var(--ink-2);border-radius:999px;padding:5px 13px;font-size:.88rem;font-weight:500;transition:background .25s,color .25s}
+.chip:hover{background:var(--ink);color:var(--on-ink)}
+@media (max-width:860px){.steps{grid-template-columns:1fr 1fr}.steps li::after{display:none}}
+@media (max-width:480px){.steps{grid-template-columns:1fr}}
+
+/* enquiry */
+.enq{background:radial-gradient(700px 400px at 100% 0%,#24358A,transparent 60%),var(--ink);color:var(--on-ink);position:relative;overflow:hidden}
+.enq .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
+.enq .head h2{color:var(--on-ink)}
+.enq .head p{color:var(--on-ink-2)}
+.enq .eyebrow{color:var(--marigold)}
+.contact{display:grid;gap:16px;margin-top:8px}
+.contact > div{display:flex;gap:14px;align-items:flex-start}
+.contact .ci{width:42px;height:42px;flex:none;border-radius:12px;background:rgba(255,255,255,.08);display:grid;place-items:center}
+.contact svg{width:22px;height:22px;stroke:var(--marigold)}
+.contact small{display:block;color:var(--on-ink-2);font-size:.82rem}
+.copy{background:rgba(255,255,255,.12);color:var(--on-ink);border:0;border-radius:6px;font:inherit;font-size:.8rem;padding:2px 9px;margin-left:6px;cursor:pointer}
+form{background:var(--card);color:var(--fg);border-radius:22px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:14px;box-shadow:9px 9px 0 var(--marigold)}
+form h3{grid-column:1/-1;font-size:1.4rem}
+form .full{grid-column:1/-1}
+label{display:grid;gap:5px;font-weight:600;font-size:.92rem}
+input,select,textarea{font:inherit;font-weight:400;font-size:1rem;padding:12px 13px;border-radius:12px;border:1.5px solid var(--rule);background:var(--paper);color:var(--fg);width:100%;min-width:0;transition:border-color .2s,box-shadow .2s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--ink-2);box-shadow:0 0 0 4px color-mix(in srgb,var(--marigold) 40%,transparent)}
+form .btn{justify-content:center;background:linear-gradient(180deg,#3BAA6D,var(--leaf));color:#fff;box-shadow:0 10px 20px -10px rgba(47,143,91,.9)}
+.shake{animation:shake .4s}
+@keyframes shake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.done{grid-column:1/-1;background:var(--paper-2);border-radius:14px;padding:18px;display:grid;gap:10px;animation:pop .45s cubic-bezier(.3,1.5,.5,1)}
+@media (max-width:860px){.enq .wrap{grid-template-columns:1fr}}
+@media (max-width:480px){form{grid-template-columns:1fr;padding:20px}}
+
+/* faq */
+.faq{display:grid;gap:12px;max-width:840px}
+details{background:var(--card);border:1.5px solid var(--rule);border-radius:16px;padding:4px 20px;transition:border-color .25s,box-shadow .25s}
+details[open]{border-color:var(--marigold);box-shadow:var(--shadow)}
+summary{cursor:pointer;font-family:var(--f-display);font-weight:600;font-size:1.14rem;padding:14px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--paper-2);color:var(--margin);font-size:1.3rem;line-height:1;transition:transform .3s,background .3s}
+details[open] summary::after{transform:rotate(45deg);background:var(--marigold);color:#1A1400}
+details p{padding:0 0 18px;color:var(--muted)}
+details[open] p{animation:fadeUp .4s both}
+
+footer{background:var(--ink-deep);color:var(--on-ink-2);font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-block:30px}
+footer .fb{display:flex;align-items:center;gap:12px}
+footer .crest{width:40px;height:46px}
+footer b{color:var(--on-ink);font-family:var(--f-display);font-size:1.05rem}
+
+.float-wa{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:8;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 12px 26px -6px rgba(0,0,0,.4);transition:transform .3s cubic-bezier(.3,1.6,.5,1)}
+.float-wa::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25D366;animation:ripple 2s ease-out infinite}
+@keyframes ripple{to{transform:scale(1.7);opacity:0}}
+.float-wa:hover{transform:scale(1.1) rotate(-8deg)}
+.float-wa svg{width:30px;height:30px;fill:#fff}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .reveal,.js .ladder .step{transform:none!important}}
+</style>
+</head>
+<body>
+
+<!-- Crest symbol, reused across the page -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE29A"/><stop offset=".45" stop-color="#F7B528"/><stop offset="1" stop-color="#C97A00"/></linearGradient>
+    <linearGradient id="gGoldEdge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF1C4"/><stop offset=".5" stop-color="#E8A10F"/><stop offset="1" stop-color="#8F5600"/></linearGradient>
+    <linearGradient id="gNavy" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34489E"/><stop offset="1" stop-color="#0D1645"/></linearGradient>
+    <linearGradient id="gPage" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCE3F5"/></linearGradient>
+    <radialGradient id="gSun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFF4C7"/><stop offset=".6" stop-color="#FFC53D"/><stop offset="1" stop-color="#F49B00"/></radialGradient>
+    <linearGradient id="gRibbon" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F06A40"/><stop offset="1" stop-color="#B83A17"/></linearGradient>
+  </defs>
+  <symbol id="crest" viewBox="0 0 64 74">
+    <path d="M32 2 61 10.5V35c0 18.5-12.8 30.8-29 37C15.8 65.8 3 53.5 3 35V10.5Z" fill="url(#gGoldEdge)"/>
+    <path d="M32 5.2 58 12.8V35c0 16.6-11.4 27.6-26 33.4C17.4 62.6 6 51.6 6 35V12.8Z" fill="url(#gGold)"/>
+    <path d="M32 8.6 54.6 15.2V35c0 14.6-10 24.4-22.6 29.6C19.4 59.4 9.4 49.6 9.4 35V15.2Z" fill="url(#gNavy)"/>
+    <path d="M32 11.4 52 17.2V35c0 13-8.8 21.8-20 26.6C20.8 56.8 12 48 12 35V17.2Z" fill="none" stroke="#F7B528" stroke-width=".7" opacity=".7"/>
+    <g stroke="#FFC53D" stroke-width="1.6" stroke-linecap="round" opacity=".95">
+      <path d="M32 17.5v4.2M22.6 21.3l2.6 3.2M41.4 21.3l-2.6 3.2M17.4 28.2l3.9 1.4M46.6 28.2l-3.9 1.4"/>
+    </g>
+    <circle cx="32" cy="33" r="8.2" fill="url(#gSun)"/>
+    <path d="M14.5 34.5c5.6-2.8 11.6-2.6 17.5.9v14.4c-5.9-3.5-11.9-3.7-17.5-.9Z" fill="url(#gPage)"/>
+    <path d="M49.5 34.5c-5.6-2.8-11.6-2.6-17.5.9v14.4c5.9-3.5 11.9-3.7 17.5-.9Z" fill="url(#gPage)"/>
+    <path d="M32 35.4v14.4" stroke="#0D1645" stroke-width="1.1"/>
+    <g stroke="#8C9BC8" stroke-width=".8" stroke-linecap="round">
+      <path d="M17.5 38.6c3.6-1.2 7.4-1 11 .6M17.5 41.8c3.6-1.2 7.4-1 11 .6M17.5 45c3.6-1.2 7.4-1 11 .6"/>
+      <path d="M46.5 38.6c-3.6-1.2-7.4-1-11 .6M46.5 41.8c-3.6-1.2-7.4-1-11 .6M46.5 45c-3.6-1.2-7.4-1-11 .6"/>
+    </g>
+    <path d="M13 51.6c6.2-2.6 12.6-2.4 19 1 6.4-3.4 12.8-3.6 19-1" fill="none" stroke="#F7B528" stroke-width="1.2"/>
+    <path d="M4 53.5h10l-2.2 3.5L14 60.5H4l2.3-3.5Z" fill="#9C2F10"/>
+    <path d="M60 53.5H50l2.2 3.5L50 60.5h10l-2.3-3.5Z" fill="#9C2F10"/>
+    <path d="M11 51.5h42v10H11Z" fill="url(#gRibbon)"/>
+    <path d="M11 51.5h42" stroke="#FFD36B" stroke-width=".6" opacity=".8"/>
+    <text x="32" y="59.4" text-anchor="middle" font-family="'Baloo 2',Trebuchet MS,sans-serif" font-weight="800" font-size="8.2" letter-spacing=".6" fill="#FFFFFF">BN</text>
+    <path d="M32 5.2 58 12.8V20C46 15 38 14 32 14S18 15 6 20v-7.2Z" fill="#FFFFFF" opacity=".12"/>
+  </symbol>
+</svg>
+
+<nav id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="BN International School home">
+      <svg class="crest" viewBox="0 0 64 74"><use href="#crest"/></svg>
+      <span><b>BN International</b><small>SCHOOL · ARERAJ</small></span>
+    </a>
+    <div class="navlinks">
+      <a href="#classes">Classes</a>
+      <a href="#why">Why BN</a>
+      <a href="#admission">Admission</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-gold" href="#enquire">Apply now</a>
+    </div>
+  </div>
+  <div class="progress" id="progress"></div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="doodles" aria-hidden="true">
+    <span style="left:4%;top:12%;font-size:2.4rem">A B C</span>
+    <span style="left:46%;top:6%;font-size:1.8rem;animation-delay:-2s">1 2 3</span>
+    <span style="left:8%;bottom:10%;font-size:2rem;animation-delay:-4s">★</span>
+    <span style="right:6%;bottom:14%;font-size:2.2rem;animation-delay:-1s">अ आ इ</span>
+    <span style="left:40%;bottom:6%;font-size:1.7rem;animation-delay:-6s">✏︎</span>
+  </div>
+  <div class="wrap">
+    <div>
+      <span class="ticket fade"><i></i>Admissions open · Session 2027–28</span>
+      <h1><span class="w" style="animation-delay:.1s">Big</span> <span class="w" style="animation-delay:.18s">dreams</span> <span class="w" style="animation-delay:.26s">start</span> <span class="w" style="animation-delay:.34s">in</span> <em class="w" style="animation-delay:.42s">Areraj.<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 14C50 4 120 4 197 12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></em></h1>
+      <p class="lede fade d2">An English-medium school for Nursery to Class 7, where every child is known by name, taught with care, and made ready for the world.</p>
+      <p class="lede-hi fade d2">हर बच्चा खास है, हर सपना ज़रूरी।</p>
+      <div class="ctas fade d3">
+        <a class="btn btn-gold" href="#enquire">Book a school visit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#classes">Explore classes</a>
+      </div>
+      <div class="facts fade d4">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 19V6l8-3 8 3v13"/><path d="M9 19v-6h6v6"/></svg>Nursery to Class 7</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 5h16v11H4z"/><path d="M8 20h8M12 16v4"/></svg>Smart classrooms</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>Areraj, East Champaran</span>
+      </div>
+    </div>
+
+    <div class="scene fade d2" aria-hidden="true">
+      <svg viewBox="0 0 420 370">
+        <defs>
+          <linearGradient id="gWall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E3E8F6"/></linearGradient>
+          <linearGradient id="gRoof" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F06A40"/><stop offset="1" stop-color="#C2401E"/></linearGradient>
+          <linearGradient id="gGrass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3BAA6D"/><stop offset="1" stop-color="#1F6E44"/></linearGradient>
+          <linearGradient id="gWin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4A5DB0"/><stop offset="1" stop-color="#1B2868"/></linearGradient>
+        </defs>
+        <g class="sun-rays" opacity=".55"><g stroke="#FFC53D" stroke-width="3" stroke-linecap="round">
+          <path d="M330 10v14M330 116v14M270 70h14M376 70h14M288 28l10 10M362 102l10 10M372 28l-10 10M298 102l-10 10"/></g></g>
+        <circle cx="330" cy="70" r="36" fill="url(#gSun)"/>
+        <g class="cloud"><g fill="#FFFFFF" opacity=".85"><ellipse cx="90" cy="60" rx="34" ry="13"/><ellipse cx="108" cy="50" rx="20" ry="14"/><ellipse cx="76" cy="52" rx="15" ry="11"/></g></g>
+        <g class="cloud c2"><g fill="#FFFFFF" opacity=".6"><ellipse cx="250" cy="120" rx="26" ry="9"/><ellipse cx="262" cy="112" rx="14" ry="10"/></g></g>
+        <g class="bird"><g class="wing"><path d="M0 0q6-7 12 0q6-7 12 0" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/></g></g>
+        <g class="bird b2"><g transform="translate(0 40) scale(.7)"><g class="wing"><path d="M0 0q6-7 12 0q6-7 12 0" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/></g></g></g>
+        <path d="M0 304c70-26 140-30 210-14s140 10 210-12v92H0Z" fill="url(#gGrass)"/>
+        <rect x="60" y="152" width="300" height="150" rx="6" fill="url(#gWall)"/>
+        <rect x="60" y="286" width="300" height="16" fill="#C9D3EE"/>
+        <path d="M44 158 210 86l166 72Z" fill="url(#gRoof)"/>
+        <path d="M44 158h332" stroke="#9C2F10" stroke-width="4"/>
+        <rect x="168" y="110" width="84" height="192" fill="#F3F6FD"/>
+        <path d="M158 117 210 92l52 25Z" fill="#B83A17"/>
+        <circle cx="210" cy="150" r="18" fill="#15225A"/>
+        <circle cx="210" cy="150" r="14" fill="#FBFBF8"/>
+        <g stroke="#15225A" stroke-width="2.5" stroke-linecap="round"><path d="M210 150v-9"/><path d="M210 150l6 4"><animateTransform attributeName="transform" type="rotate" from="0 210 150" to="360 210 150" dur="12s" repeatCount="indefinite"/></path></g>
+        <rect x="188" y="234" width="44" height="68" rx="22" fill="#15225A"/>
+        <rect x="192" y="238" width="36" height="64" rx="18" fill="none" stroke="#F4A300" stroke-width="1.5" opacity=".7"/>
+        <g fill="url(#gWin)">
+          <rect x="80" y="180" width="32" height="34" rx="5"/><rect x="124" y="180" width="32" height="34" rx="5"/>
+          <rect x="264" y="180" width="32" height="34" rx="5"/><rect x="308" y="180" width="32" height="34" rx="5"/>
+          <rect x="80" y="236" width="32" height="34" rx="5"/><rect x="124" y="236" width="32" height="34" rx="5"/>
+          <rect x="264" y="236" width="32" height="34" rx="5"/><rect x="308" y="236" width="32" height="34" rx="5"/>
+        </g>
+        <g fill="#FFD36B"><rect class="lamp" x="83" y="183" width="12" height="13" rx="2"/><rect class="lamp" x="311" y="239" width="12" height="13" rx="2"/><rect class="lamp" x="127" y="239" width="12" height="13" rx="2"/></g>
+        <text x="210" y="226" text-anchor="middle" font-family="'Baloo 2',sans-serif" font-weight="800" font-size="12.5" letter-spacing=".5" fill="#15225A">BN INTERNATIONAL</text>
+        <line x1="210" y1="92" x2="210" y2="28" stroke="#15225A" stroke-width="3"/>
+        <circle cx="210" cy="27" r="3" fill="#F4A300"/>
+        <g class="flag">
+          <rect x="211" y="31" width="42" height="9" fill="#FF9933"/><rect x="211" y="40" width="42" height="9" fill="#FFFFFF"/><rect x="211" y="49" width="42" height="9" fill="#138808"/>
+          <circle cx="232" cy="44.5" r="3" fill="none" stroke="#000080" stroke-width="1"/>
+        </g>
+        <circle cx="40" cy="252" r="36" fill="#257A4C"/><circle cx="52" cy="238" r="20" fill="#2F8F5B"/><rect x="36" y="272" width="8" height="34" rx="2" fill="#6B4A2B"/>
+        <circle cx="388" cy="260" r="27" fill="#257A4C"/><circle cx="378" cy="250" r="14" fill="#2F8F5B"/><rect x="384" y="276" width="8" height="28" rx="2" fill="#6B4A2B"/>
+        <path d="M150 370 188 302h44l38 68Z" fill="#E9E1C8" opacity=".9"/>
+        <g class="kid"><circle cx="128" cy="318" r="7" fill="#6B4A2B"/><path d="M120 344v-16a8 8 0 0 1 16 0v16Z" fill="#F4A300"/><rect x="118" y="326" width="6" height="12" rx="2" fill="#15225A"/></g>
+        <g class="kid k2"><circle cx="292" cy="320" r="6.5" fill="#6B4A2B"/><path d="M285 344v-15a7 7 0 0 1 14 0v15Z" fill="#E4572E"/><rect x="296" y="328" width="6" height="11" rx="2" fill="#15225A"/></g>
+      </svg>
+      <div class="seal">
+        <div class="ring"><svg viewBox="0 0 200 200">
+          <defs><path id="circ" d="M100 100m-82 0a82 82 0 1 1 164 0a82 82 0 1 1-164 0"/></defs>
+          <circle cx="100" cy="100" r="98" fill="#0C1440"/>
+          <circle cx="100" cy="100" r="94" fill="none" stroke="#F4A300" stroke-width="1.5" stroke-dasharray="2 5"/>
+          <text font-family="'Baloo 2',sans-serif" font-weight="700" font-size="15.5" letter-spacing="3.2" fill="#FFD36B"><textPath href="#circ">ADMISSIONS OPEN ✦ SESSION 2027–28 ✦ NURSERY – CLASS 7 ✦</textPath></text>
+        </svg></div>
+        <svg class="crest" viewBox="0 0 64 74"><use href="#crest"/></svg>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true"><div class="track" id="track"></div></div>
+
+<section id="classes">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Nursery → Class 7</span>
+      <h2>One school, <span class="mk">ten steps up.</span></h2>
+      <p>Tap a class to see the right age and what your child will learn there.</p>
+    </div>
+    <div class="ladder" id="ladder" role="group" aria-label="Classes"></div>
+    <div class="stage">
+      <span><i style="background:var(--marigold)"></i>Foundation (play-based)</span>
+      <span><i style="background:var(--leaf)"></i>Primary (Class 1–5)</span>
+      <span><i style="background:var(--ink-2)"></i>Middle (Class 6–7)</span>
+    </div>
+    <div class="detail" id="detail" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="ruled" id="why">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Why parents choose BN</span>
+      <h2>City-level schooling, <span class="mk">right here at home.</span></h2>
+      <p>No need to send young children far away. Everything they need to grow is close to home.</p>
+    </div>
+    <div class="why">
+      <article class="feature reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#1A1400" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3.5" fill="#FFF4C7"/><path d="M2.5 20c.8-3.8 3.4-6 6.5-6s5.7 2.2 6.5 6"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14c2 .7 3.2 2.8 3.5 6"/></svg></div>
+        <h3>Small classes, personal attention</h3>
+        <p>Teachers know every child by name. Weak points are caught early and worked on, and parents hear about progress regularly, not only at results time.</p>
+      </article>
+      <article class="reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#2B3A7A" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="12" rx="2" fill="#FFD36B" fill-opacity=".5"/><path d="M8 20h8M12 16v4"/><path d="m10 8 4 2-4 2Z" fill="#E4572E" stroke="#E4572E"/></svg></div>
+        <h3>Smart classrooms</h3>
+        <p>Audio-visual lessons make science, maths and English easy to understand and hard to forget.</p>
+      </article>
+      <article class="reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#2B3A7A" stroke-width="2" stroke-linecap="round"><path d="M4 5h12a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3h-6l-4 3v-3H4Z" fill="#FFD36B" fill-opacity=".5"/><path d="M8 10h6M8 13h4"/></svg></div>
+        <h3>Spoken English</h3>
+        <p>Daily practice in speaking, reading and writing, so children grow confident in English as well as Hindi.</p>
+      </article>
+      <article class="reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#2B3A7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 8l10 5 10-5Z" fill="#FFD36B" fill-opacity=".6"/><path d="M6 10v5.5c3.5 2.5 8.5 2.5 12 0V10"/><path d="M22 8v6"/></svg></div>
+        <h3>Strong foundations</h3>
+        <p>Phonics, number sense and good handwriting from Nursery, so every class after builds on solid ground.</p>
+      </article>
+      <article class="reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#2B3A7A" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9" fill="#FFD36B" fill-opacity=".5"/><path d="M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18M3 12h18"/></svg></div>
+        <h3>Sports &amp; activities</h3>
+        <p>Games, yoga, drawing, music and annual functions. Children learn teamwork and find what they love.</p>
+      </article>
+      <article class="reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#2B3A7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6Z" fill="#FFD36B" fill-opacity=".5"/><path d="m9 12 2 2 4-4" stroke="#2F8F5B" stroke-width="2.5"/></svg></div>
+        <h3>Safe &amp; caring campus</h3>
+        <p>A clean, secure campus with watchful staff, so you can send your child each morning without worry.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap day">
+    <div>
+      <div class="head reveal">
+        <span class="eyebrow">A day at BN</span>
+        <h2>What your child's <span class="mk">school day</span> looks like.</h2>
+      </div>
+      <ol class="tt" id="tt">
+        <span class="tt-fill" id="ttFill"></span>
+        <li><time>8:00</time><b>Morning assembly</b><span>Prayer, national anthem, thought of the day, news reading.</span></li>
+        <li><time>8:30</time><b>Core lessons</b><span>English, Maths and Science while minds are fresh.</span></li>
+        <li><time>10:30</time><b>Tiffin break</b><span>Lunch together, then play under a teacher's eye.</span></li>
+        <li><time>11:00</time><b>Hindi, Social Studies &amp; Computer</b><span>Smart-class lessons and hands-on practice.</span></li>
+        <li><time>12:30</time><b>Activity period</b><span>Sports, drawing, music, yoga or reading club.</span></li>
+        <li><time>1:30</time><b>Home time</b><span>Diary checked, homework noted, safe dispersal.</span></li>
+      </ol>
+      <p class="note" style="margin-left:64px">Timings are indicative and may change by season.</p>
+    </div>
+    <figure class="quote reveal">
+      <p>“We want every child from Areraj and nearby villages to get the same quality of education that big-city children get, with values, discipline and a lot of love.”</p>
+      <small>— Management, BN International School</small>
+    </figure>
+  </div>
+</section>
+
+<section class="ruled" id="admission">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Admission 2027–28</span>
+      <h2>Admission in <span class="mk">four simple steps.</span></h2>
+      <p>The process is quick and parent-friendly. Our office helps you at every step.</p>
+    </div>
+    <ol class="steps">
+      <li class="reveal"><b>Enquire</b><span>Fill the form below or call the school office.</span></li>
+      <li class="reveal"><b>Visit the campus</b><span>See the classrooms and meet the teachers with your child.</span></li>
+      <li class="reveal"><b>Interaction</b><span>A friendly chat for Nursery–UKG, a simple assessment for Class 1 and above.</span></li>
+      <li class="reveal"><b>Confirm the seat</b><span>Submit documents and the admission fee. Welcome to BN!</span></li>
+    </ol>
+    <div class="docs reveal">
+      <strong>Bring along:</strong>
+      <span class="chip">Birth certificate</span>
+      <span class="chip">Aadhaar (child &amp; parent)</span>
+      <span class="chip">4 passport photos</span>
+      <span class="chip">TC &amp; last report card (Class 2+)</span>
+    </div>
+  </div>
+</section>
+
+<section class="enq" id="enquire">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="head">
+        <span class="eyebrow">Admission enquiry</span>
+        <h2>Reserve a seat for your child.</h2>
+        <p>Send your details and the school office will call you back, usually the same day.</p>
+      </div>
+      <div class="contact">
+        <div><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span><small>Address</small>BN International School, Areraj, East Champaran, Bihar</span></div>
+        <div><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><span><small>Phone / WhatsApp</small><span id="phoneTxt"></span><button class="copy" id="copyPhone" type="button">Copy</button></span></div>
+        <div><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span><small>Office hours</small>Mon–Sat, 8:00 AM – 2:00 PM</span></div>
+      </div>
+    </div>
+
+    <form id="form" class="reveal" novalidate>
+      <h3>Admission form 2027–28</h3>
+      <label>Parent's name<input id="pname" placeholder="e.g. Ramesh Kumar"></label>
+      <label>Mobile number<input id="pphone" inputmode="numeric" maxlength="10" placeholder="10-digit number"></label>
+      <label>Child's name<input id="cname" placeholder="e.g. Aarav"></label>
+      <label>Class applying for<select id="cclass"></select></label>
+      <label class="full">Village / locality<input id="village" placeholder="e.g. Areraj, Sangrampur, Kesariya"></label>
+      <label class="full">Message (optional)<textarea id="msg" rows="2" placeholder="Any question about fees, transport, timings…"></textarea></label>
+      <button class="btn full" type="submit">Send on WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <p class="note full" id="formNote">Your details go only to the school office.</p>
+      <div class="done" id="done" hidden></div>
+    </form>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Parents ask</span>
+      <h2>Common questions.</h2>
+    </div>
+    <div class="faq">
+      <details open><summary>Which classes are available?</summary><p>Nursery, LKG, UKG and Class 1 to Class 7. Admissions for the 2027–28 session are open for all classes, subject to seat availability.</p></details>
+      <details><summary>What is the medium of instruction?</summary><p>English medium, with Hindi taught as a full subject. Teachers explain in Hindi wherever a young child needs it.</p></details>
+      <details><summary>What is the right age for Nursery?</summary><p>Children who are around 3 years old at the start of the session can join Nursery. LKG is for about 4 years, UKG for about 5 years and Class 1 for about 6 years.</p></details>
+      <details><summary>How can I know the fee structure?</summary><p>Call or WhatsApp the school office, or visit the campus. We explain the full fees with no hidden charges.</p></details>
+      <details><summary>Is transport available?</summary><p>Please ask the school office about van routes covering Areraj and nearby villages.</p></details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="fb"><svg class="crest" viewBox="0 0 64 74"><use href="#crest"/></svg><span><b>BN International School</b><br>Areraj, East Champaran, Bihar · Nursery to Class 7</span></span>
+    <span>Website by Markflare</span>
+  </div>
+</footer>
+
+<a class="float-wa" id="floatWa" href="#" target="_blank" rel="noopener" aria-label="Chat with the school on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.6 14.1c-.2.7-1.4 1.3-1.9 1.3-.5.1-1.1.1-1.8-.1a16 16 0 0 1-1.6-.6 12.6 12.6 0 0 1-4.8-4.3c-.4-.5-1.1-1.6-1.1-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
+</a>
+
+<script>
+/* ===== Edit these before going live ===== */
+const SCHOOL_PHONE = "910000000000";          // WhatsApp number with country code, digits only
+const SCHOOL_PHONE_LABEL = "+91 00000 00000"; // how the number is shown
+/* ======================================== */
+document.documentElement.classList.add("js");
+
+const CLASSES = [
+  {k:"Nur",name:"Nursery",age:"Age 3+",stage:"f",pts:["Rhymes, stories and play-way learning","Colours, shapes and first letters","Fine-motor skills: colouring, clay, beads"]},
+  {k:"LKG",name:"LKG",age:"Age 4+",stage:"f",pts:["Phonics A–Z and first words","Numbers 1–50, counting objects","Speaking in short English sentences"]},
+  {k:"UKG",name:"UKG",age:"Age 5+",stage:"f",pts:["Reading simple words and sentences","Numbers to 100, simple addition","Neat writing in English and Hindi"]},
+  {k:"1",name:"Class 1",age:"Age 6+",stage:"p",pts:["Reading short stories aloud","Addition, subtraction, place value","EVS: me, my family, my village"]},
+  {k:"2",name:"Class 2",age:"Age 7+",stage:"p",pts:["Grammar basics and composition","Tables, money and time","Computer basics with mouse and keyboard"]},
+  {k:"3",name:"Class 3",age:"Age 8+",stage:"p",pts:["Comprehension and letter writing","Multiplication, division, fractions","Science of plants, animals and water"]},
+  {k:"4",name:"Class 4",age:"Age 9+",stage:"p",pts:["Essay writing and public speaking","Geometry and measurement","Maps of Bihar and India"]},
+  {k:"5",name:"Class 5",age:"Age 10+",stage:"p",pts:["Confident spoken English","Decimals, percentages, data","Projects and science activities"]},
+  {k:"6",name:"Class 6",age:"Age 11+",stage:"m",pts:["Separate Science and Social Science","Algebra begins","Computer: typing and MS Office basics"]},
+  {k:"7",name:"Class 7",age:"Age 12+",stage:"m",pts:["Board-pattern question practice","Lab-style science experiments","Leadership roles in assemblies and events"]},
+];
+const STAGE = {f:"var(--marigold)",p:"var(--leaf)",m:"var(--ink-2)"};
+const CAP = `<svg class="cap" viewBox="0 0 24 24" fill="#F4A300"><path d="M12 4 1 9l11 5 9-4.1V16h2V9Z"/><path d="M6 12.5V16c3 2.5 9 2.5 12 0v-3.5l-6 2.7Z"/></svg>`;
+
+/* ticker */
+const tickerItems = ["Admissions Open 2027–28","Nursery","LKG","UKG","Class 1 to 7","English Medium","Smart Classrooms","Spoken English","Sports & Yoga","Safe Campus","Areraj, East Champaran"];
+document.getElementById("track").innerHTML = [...tickerItems,...tickerItems].map(t=>`<span>${t.replace("&","&amp;")}</span>`).join("");
+
+/* ladder */
+const ladder = document.getElementById("ladder"), detail = document.getElementById("detail");
+const wide = () => matchMedia("(min-width:641px)").matches;
+CLASSES.forEach((c,i)=>{
+  const b = document.createElement("button");
+  b.className="step"; b.type="button"; b.style.setProperty("--i",i);
+  b.style.borderBottom = `6px solid ${STAGE[c.stage]}`;
+  b.innerHTML = `${CAP}<b>${c.k}</b><small>${c.age}</small>`;
+  b.addEventListener("click",()=>select(i,true));
+  ladder.appendChild(b);
+});
+function sizeLadder(){[...ladder.children].forEach((b,i)=>{b.style.height = wide() ? (112+i*18)+"px" : "auto"})}
+function select(i,anim){
+  [...ladder.children].forEach((b,j)=>b.setAttribute("aria-pressed",String(j===i)));
+  const c = CLASSES[i];
+  detail.innerHTML = `<div class="big">${c.k}</div><div><h3>${c.name}</h3><p class="age">${c.age} · ${c.stage==="f"?"Foundation":c.stage==="p"?"Primary":"Middle school"}</p><ul>${c.pts.map(p=>`<li>${p}</li>`).join("")}</ul></div>`;
+  if(anim){detail.classList.remove("pop");void detail.offsetWidth;detail.classList.add("pop")}
+}
+sizeLadder(); select(0); addEventListener("resize",sizeLadder);
+
+/* scroll reveal (motion only; content is visible without it) */
+const io = "IntersectionObserver" in window ? new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.15}) : null;
+document.querySelectorAll(".reveal, .ladder").forEach((el,i)=>{
+  if(io){ if(el.classList.contains("reveal") && el.parentElement.matches(".why,.steps")) el.style.transitionDelay = (([...el.parentElement.children].indexOf(el))*80)+"ms"; io.observe(el);} else el.classList.add("in");
+});
+setTimeout(()=>document.querySelectorAll(".reveal,.ladder").forEach(el=>{const r=el.getBoundingClientRect(); if(r.top<innerHeight) el.classList.add("in")}),1200);
+
+/* scroll progress, nav shadow, timetable fill */
+const nav=document.getElementById("nav"), prog=document.getElementById("progress"), tt=document.getElementById("tt"), fill=document.getElementById("ttFill"), items=[...tt.querySelectorAll("li")];
+function onScroll(){
+  const h = document.documentElement.scrollHeight - innerHeight;
+  prog.style.transform = `scaleX(${h>0? scrollY/h : 0})`;
+  nav.classList.toggle("scrolled", scrollY>10);
+  const r = tt.getBoundingClientRect();
+  const p = Math.min(1, Math.max(0, (innerHeight*0.7 - r.top) / r.height));
+  fill.style.height = (p*r.height)+"px";
+  items.forEach(li=>li.classList.toggle("on", li.offsetTop <= p*r.height));
+}
+addEventListener("scroll",onScroll,{passive:true}); onScroll();
+
+/* class select + phone */
+const sel=document.getElementById("cclass");
+sel.innerHTML=`<option value="">Choose class</option>`+CLASSES.map(c=>`<option>${c.name}</option>`).join("");
+document.getElementById("phoneTxt").textContent=SCHOOL_PHONE_LABEL;
+const waBase=`https://wa.me/${SCHOOL_PHONE}`;
+document.getElementById("floatWa").href=waBase+"?text="+encodeURIComponent("Namaste, I want to know about admission at BN International School.");
+document.getElementById("copyPhone").addEventListener("click",e=>{
+  const btn=e.currentTarget;
+  try{navigator.clipboard.writeText(SCHOOL_PHONE_LABEL).then(()=>{btn.textContent="Copied"},()=>{btn.textContent="Select it"})}catch(_){btn.textContent="Select it"}
+});
+
+/* enquiry form */
+const form=document.getElementById("form");
+form.addEventListener("submit",e=>{
+  e.preventDefault();
+  const v=id=>document.getElementById(id).value.trim(), note=document.getElementById("formNote");
+  const fail=m=>{note.textContent=m;note.style.color="var(--margin)";form.classList.remove("shake");void form.offsetWidth;form.classList.add("shake")};
+  if(!v("pname")||!v("cname")||!v("cclass")) return fail("Please fill parent's name, child's name and class.");
+  if(!/^[6-9]\d{9}$/.test(v("pphone"))) return fail("Enter a valid 10-digit mobile number starting with 6, 7, 8 or 9.");
+  note.textContent="Your details go only to the school office."; note.style.color="";
+  const text=`Namaste! Admission enquiry for BN International School (2027–28)\n\nParent: ${v("pname")}\nMobile: ${v("pphone")}\nChild: ${v("cname")}\nClass: ${v("cclass")}`+(v("village")?`\nLocality: ${v("village")}`:"")+(v("msg")?`\nMessage: ${v("msg")}`:"");
+  const done=document.getElementById("done");
+  done.hidden=false;
+  done.innerHTML=`<b>Almost done, ${v("pname").split(" ")[0]}! 🎉</b><span>Tap below to send your enquiry to the school on WhatsApp. If WhatsApp doesn't open, call ${SCHOOL_PHONE_LABEL}.</span><a class="btn btn-gold" href="${waBase}?text=${encodeURIComponent(text)}" target="_blank" rel="noopener">Open WhatsApp</a>`;
+});
+</script>
+
+</body>
+</html>
