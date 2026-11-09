@@ -533,7 +533,7 @@ footer b{color:var(--on-ink);font-family:var(--f-display);font-size:1.05rem}
     <div class="gal" id="gal"></div>
 
     <article class="news reveal">
-      <div class="clip" id="newsClip" role="button" tabindex="0" aria-label="Open newspaper clipping"><img src="images/06.jpg" alt="Dainik Harsh Ujala newspaper report on Chhath Mahaparv celebration at BN International School" loading="lazy"></div>
+      <div class="clip" id="newsClip" role="button" tabindex="0" aria-label="Open newspaper clipping"><img src="images/06.jpg" width="1280" height="831" alt="Dainik Harsh Ujala newspaper report on Chhath Mahaparv celebration at BN International School" loading="lazy"></div>
       <div>
         <span class="tag">In the news</span>
         <h3>बी एन इंटरनेशनल स्कूल में छठ महापर्व की दिखी लोक संस्कृति की झलक</h3>
@@ -742,6 +742,7 @@ const PHOTOS = [
   {f:"15",c:"chhath",t:"The whole Chhath group"},
   {f:"13",c:"chhath",t:"Festive smiles"},
 ];
+const DIMS = {"01":[787,1400],"02":[787,1400],"03":[787,1400],"04":[720,1280],"05":[787,1400],"06":[1280,831],"07":[787,1400],"08":[787,1400],"09":[787,1400],"10":[1400,787],"11":[1400,787],"12":[1400,787],"13":[787,1400],"14":[1400,787],"15":[1400,787]};
 const CATS = {all:"All photos",chhath:"Chhath Puja",diwali:"Diwali & Rangoli"};
 const CATL = {chhath:"Chhath Puja",diwali:"Diwali"};
 const gal = document.getElementById("gal"), filters = document.getElementById("filters");
@@ -755,7 +756,7 @@ Object.entries(CATS).forEach(([k,label])=>{
 });
 function renderGal(k){
   shown = k==="all" ? PHOTOS.slice() : PHOTOS.filter(p=>p.c===k);
-  gal.innerHTML = shown.map((p,i)=>`<figure tabindex="0" data-i="${i}" style="animation-delay:${i*50}ms"><img src="images/${p.f}.jpg" alt="${p.t}" loading="lazy"><figcaption><small>${CATL[p.c]}</small>${p.t}</figcaption></figure>`).join("");
+  gal.innerHTML = shown.map((p,i)=>`<figure tabindex="0" data-i="${i}" style="animation-delay:${i*50}ms"><img src="images/${p.f}.jpg" alt="${p.t}" width="${DIMS[p.f][0]}" height="${DIMS[p.f][1]}" loading="lazy"><figcaption><small>${CATL[p.c]}</small>${p.t}</figcaption></figure>`).join("");
 }
 renderGal("all");
 const lb=document.getElementById("lb"), lbImg=document.getElementById("lbImg"), lbCap=document.getElementById("lbCap");
