@@ -8,6 +8,7 @@
 <meta property="og:title" content="BN International School, Areraj — Admissions Open 2027–28">
 <meta property="og:description" content="English-medium school from Nursery to Class 7 in Areraj, East Champaran. Book a school visit today.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="images/04.jpg">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <title>BN International School</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -274,6 +275,43 @@ footer b{color:var(--on-ink);font-family:var(--f-display);font-size:1.05rem}
 .float-wa:hover{transform:scale(1.1) rotate(-8deg)}
 .float-wa svg{width:30px;height:30px;fill:#fff}
 
+
+/* gallery */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:-14px 0 26px}
+.filters button{font:inherit;font-weight:600;font-size:.92rem;padding:8px 16px;border-radius:999px;border:1.5px solid var(--rule);background:var(--card);color:var(--fg);cursor:pointer;transition:background .25s,color .25s,border-color .25s,transform .25s}
+.filters button:hover{transform:translateY(-2px);border-color:var(--marigold)}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--on-ink);border-color:var(--ink)}
+.filters b{font-weight:600;opacity:.6;margin-left:4px;font-variant-numeric:tabular-nums}
+.gal{columns:3 260px;column-gap:16px}
+.gal figure{break-inside:avoid;margin:0 0 16px;position:relative;border-radius:16px;overflow:hidden;cursor:zoom-in;background:var(--paper-2);box-shadow:0 10px 24px -14px rgba(21,34,90,.5);animation:fadeUp .5s both}
+.gal img{display:block;width:100%;height:auto;transition:transform .7s cubic-bezier(.2,.8,.3,1),filter .4s}
+.gal figure:hover img{transform:scale(1.06);filter:saturate(1.15)}
+.gal figcaption{position:absolute;inset:auto 0 0 0;padding:28px 14px 12px;font-weight:600;font-size:.92rem;color:#fff;background:linear-gradient(transparent,rgba(8,13,42,.82));transform:translateY(6px);opacity:.92;transition:transform .35s,opacity .35s}
+.gal figure:hover figcaption{transform:none;opacity:1}
+.gal figcaption small{display:block;font-weight:500;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--marigold-2)}
+.gal figure:focus-visible{outline:3px solid var(--marigold);outline-offset:3px}
+
+.news{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center;margin-top:46px;background:var(--card);border:2px solid var(--ink);border-radius:22px;padding:24px;box-shadow:8px 8px 0 var(--marigold)}
+.news .clip{border-radius:12px;overflow:hidden;cursor:zoom-in;transform:rotate(-1deg);box-shadow:0 14px 30px -14px rgba(0,0,0,.5);transition:transform .4s cubic-bezier(.3,1.4,.5,1)}
+.news .clip:hover{transform:rotate(0) scale(1.02)}
+.news .clip img{display:block;width:100%;height:auto}
+.news .tag{display:inline-flex;align-items:center;gap:6px;background:var(--margin);color:#fff;font-family:var(--f-display);font-weight:700;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;padding:4px 12px;border-radius:999px}
+.news h3{font-size:1.45rem;margin-top:12px;font-family:var(--f-body);font-weight:600;line-height:1.35}
+.news p{color:var(--muted);margin-top:10px}
+.news .src{margin-top:14px;font-weight:600;color:var(--fg)}
+@media (max-width:860px){.news{grid-template-columns:1fr}}
+
+.lb{position:fixed;inset:0;z-index:20;background:rgba(6,10,32,.94);display:grid;grid-template-rows:1fr auto;place-items:center;padding:calc(56px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));animation:lbIn .3s both}
+@keyframes lbIn{from{opacity:0}}
+.lb img{max-width:100%;max-height:100%;object-fit:contain;border-radius:10px;box-shadow:0 30px 60px rgba(0,0,0,.6);animation:pop .35s cubic-bezier(.3,1.4,.5,1)}
+.lb .cap{color:#fff;font-weight:600;padding-top:12px;text-align:center}
+.lb .cap small{color:var(--marigold-2);margin-left:8px;font-variant-numeric:tabular-nums}
+.lb button{position:absolute;width:48px;height:48px;border-radius:50%;border:0;background:rgba(255,255,255,.12);color:#fff;font-size:1.6rem;line-height:1;cursor:pointer;display:grid;place-items:center;transition:background .2s}
+.lb button:hover{background:var(--marigold);color:#1A1400}
+.lb .x{top:calc(10px + env(safe-area-inset-top,0px));right:calc(12px + env(safe-area-inset-right,0px))}
+.lb .pv{left:calc(12px + env(safe-area-inset-left,0px));top:50%;transform:translateY(-50%)}
+.lb .nx{right:calc(12px + env(safe-area-inset-right,0px));top:50%;transform:translateY(-50%)}
+
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .reveal,.js .ladder .step{transform:none!important}}
 </style>
 </head>
@@ -324,6 +362,7 @@ footer b{color:var(--on-ink);font-family:var(--f-display);font-size:1.05rem}
     <div class="navlinks">
       <a href="#classes">Classes</a>
       <a href="#why">Why BN</a>
+      <a href="#gallery">Gallery</a>
       <a href="#admission">Admission</a>
       <a href="#faq">FAQ</a>
       <a class="btn btn-gold" href="#enquire">Apply now</a>
@@ -478,7 +517,38 @@ footer b{color:var(--on-ink);font-family:var(--f-display);font-size:1.05rem}
   </div>
 </section>
 
-<section>
+<section id="gallery">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Life at BN</span>
+      <h2>Festivals, colours and <span class="mk">proud moments.</span></h2>
+      <p>Our students celebrate Bihar's culture with full heart. Here is a look at Chhath Mahaparv and Diwali on campus.</p>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filter photos"></div>
+    <div class="gal" id="gal"></div>
+
+    <article class="news reveal">
+      <div class="clip" id="newsClip" role="button" tabindex="0" aria-label="Open newspaper clipping"><img src="images/06.jpg" alt="Dainik Harsh Ujala newspaper report on Chhath Mahaparv celebration at BN International School" loading="lazy"></div>
+      <div>
+        <span class="tag">In the news</span>
+        <h3>बी एन इंटरनेशनल स्कूल में छठ महापर्व की दिखी लोक संस्कृति की झलक</h3>
+        <p>Our Chhath Mahaparv cultural programme was covered in the newspaper. Students presented the meaning, traditions and values of Bihar's greatest festival, organised under school coordinator Shweta Kumari.</p>
+        <p>Principal Nandkishor Kumar Yadav said that passing on the knowledge of our culture and traditions to the next generation is as important as education itself.</p>
+        <p class="src">— दैनिक हर्ष उजाला</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="x" id="lbX" type="button" aria-label="Close">×</button>
+  <button class="pv" id="lbP" type="button" aria-label="Previous photo">‹</button>
+  <img id="lbImg" alt="">
+  <p class="cap" id="lbCap"></p>
+  <button class="nx" id="lbN" type="button" aria-label="Next photo">›</button>
+</div>
+
+<section class="ruled">
   <div class="wrap day">
     <div>
       <div class="head reveal">
@@ -503,7 +573,7 @@ footer b{color:var(--on-ink);font-family:var(--f-display);font-size:1.05rem}
   </div>
 </section>
 
-<section class="ruled" id="admission">
+<section id="admission">
   <div class="wrap">
     <div class="head reveal">
       <span class="eyebrow">Admission 2027–28</span>
@@ -606,7 +676,7 @@ const STAGE = {f:"var(--marigold)",p:"var(--leaf)",m:"var(--ink-2)"};
 const CAP = `<svg class="cap" viewBox="0 0 24 24" fill="#F4A300"><path d="M12 4 1 9l11 5 9-4.1V16h2V9Z"/><path d="M6 12.5V16c3 2.5 9 2.5 12 0v-3.5l-6 2.7Z"/></svg>`;
 
 /* ticker */
-const tickerItems = ["Admissions Open 2027–28","Nursery","LKG","UKG","Class 1 to 7","English Medium","Smart Classrooms","Spoken English","Sports & Yoga","Safe Campus","Areraj, East Champaran"];
+const tickerItems = ["Admissions Open 2027–28","Featured in Dainik Harsh Ujala","Nursery","LKG","UKG","Class 1 to 7","English Medium","Smart Classrooms","Spoken English","Sports & Yoga","Safe Campus","Areraj, East Champaran"];
 document.getElementById("track").innerHTML = [...tickerItems,...tickerItems].map(t=>`<span>${t.replace("&","&amp;")}</span>`).join("");
 
 /* ladder */
@@ -648,6 +718,60 @@ function onScroll(){
   items.forEach(li=>li.classList.toggle("on", li.offsetTop <= p*r.height));
 }
 addEventListener("scroll",onScroll,{passive:true}); onScroll();
+
+
+/* gallery */
+const PHOTOS = [
+  {f:"08",c:"chhath",t:"Arghya at the ghat"},
+  {f:"04",c:"diwali",t:"Our little ones with the 2026 rangoli"},
+  {f:"11",c:"chhath",t:"Chhath Mahaparv celebration"},
+  {f:"05",c:"chhath",t:"Ready with the soop and offerings"},
+  {f:"03",c:"diwali",t:"Diya rangoli by students"},
+  {f:"09",c:"chhath",t:"Prayers in the open field"},
+  {f:"07",c:"chhath",t:"Traditional look, school corridor"},
+  {f:"12",c:"chhath",t:"Offerings to Chhathi Maiya"},
+  {f:"01",c:"diwali",t:"Marigold lotus rangoli"},
+  {f:"14",c:"chhath",t:"Chhath programme on campus"},
+  {f:"10",c:"chhath",t:"Teachers and students together"},
+  {f:"02",c:"diwali",t:"Colour-powder mandala"},
+  {f:"15",c:"chhath",t:"The whole Chhath group"},
+  {f:"13",c:"chhath",t:"Festive smiles"},
+];
+const CATS = {all:"All photos",chhath:"Chhath Puja",diwali:"Diwali & Rangoli"};
+const CATL = {chhath:"Chhath Puja",diwali:"Diwali"};
+const gal = document.getElementById("gal"), filters = document.getElementById("filters");
+let shown = PHOTOS.slice(), cur = 0;
+Object.entries(CATS).forEach(([k,label])=>{
+  const n = k==="all" ? PHOTOS.length : PHOTOS.filter(p=>p.c===k).length;
+  const b = document.createElement("button"); b.type="button"; b.dataset.k=k;
+  b.setAttribute("aria-pressed", String(k==="all")); b.innerHTML = `${label}<b>${n}</b>`;
+  b.addEventListener("click",()=>{ [...filters.children].forEach(x=>x.setAttribute("aria-pressed",String(x===b))); renderGal(k); });
+  filters.appendChild(b);
+});
+function renderGal(k){
+  shown = k==="all" ? PHOTOS.slice() : PHOTOS.filter(p=>p.c===k);
+  gal.innerHTML = shown.map((p,i)=>`<figure tabindex="0" data-i="${i}" style="animation-delay:${i*50}ms"><img src="images/${p.f}.jpg" alt="${p.t}" loading="lazy"><figcaption><small>${CATL[p.c]}</small>${p.t}</figcaption></figure>`).join("");
+}
+renderGal("all");
+const lb=document.getElementById("lb"), lbImg=document.getElementById("lbImg"), lbCap=document.getElementById("lbCap");
+let lbList = shown, lastFocus = null;
+function openLb(list,i){ lbList=list; cur=i; lastFocus=document.activeElement; showLb(); lb.hidden=false; document.body.style.overflow="hidden"; document.getElementById("lbX").focus(); }
+function showLb(){ const p=lbList[cur]; lbImg.src=`images/${p.f}.jpg`; lbImg.alt=p.t; lbCap.innerHTML = `${p.t}${lbList.length>1?`<small>${cur+1} / ${lbList.length}</small>`:""}`; lbImg.style.animation="none"; void lbImg.offsetWidth; lbImg.style.animation="";
+  document.getElementById("lbP").hidden = document.getElementById("lbN").hidden = lbList.length<2; }
+function closeLb(){ lb.hidden=true; document.body.style.overflow=""; lastFocus && lastFocus.focus(); }
+const step = d => { cur=(cur+d+lbList.length)%lbList.length; showLb(); };
+gal.addEventListener("click",e=>{ const f=e.target.closest("figure"); if(f) openLb(shown,+f.dataset.i); });
+gal.addEventListener("keydown",e=>{ const f=e.target.closest("figure"); if(f && (e.key==="Enter"||e.key===" ")){ e.preventDefault(); openLb(shown,+f.dataset.i);} });
+const clip=document.getElementById("newsClip"), NEWS=[{f:"06",t:"Dainik Harsh Ujala — Chhath Mahaparv at BN International School"}];
+clip.addEventListener("click",()=>openLb(NEWS,0));
+clip.addEventListener("keydown",e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); openLb(NEWS,0);} });
+document.getElementById("lbX").addEventListener("click",closeLb);
+document.getElementById("lbP").addEventListener("click",()=>step(-1));
+document.getElementById("lbN").addEventListener("click",()=>step(1));
+lb.addEventListener("click",e=>{ if(e.target===lb) closeLb(); });
+addEventListener("keydown",e=>{ if(lb.hidden) return; if(e.key==="Escape") closeLb(); if(e.key==="ArrowRight") step(1); if(e.key==="ArrowLeft") step(-1); });
+let tx=null; lb.addEventListener("touchstart",e=>{tx=e.touches[0].clientX},{passive:true});
+lb.addEventListener("touchend",e=>{ if(tx===null) return; const dx=e.changedTouches[0].clientX-tx; if(Math.abs(dx)>50) step(dx<0?1:-1); tx=null; });
 
 /* class select + phone */
 const sel=document.getElementById("cclass");
